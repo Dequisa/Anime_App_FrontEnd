@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 // import axios from "axios";
 import "../CSS/Art.css";
 import FormData from "form-data";
-// const { REACT_APP_BEARER_TOKEN } = process.env;
 
 function ArtPosts() {
   const [selectedFile, setSelectedFile] = useState([]);
@@ -13,9 +12,9 @@ function ArtPosts() {
   };
 
   const onUploadClick = async (e) => {
-    // let id = "";
+    let id = "";
     var myHeaders = new Headers();
-    myHeaders.append("Authorization");
+    myHeaders.append("Authorization", `${process.env.REACT_APP_BEARER_TOKEN}`);
     var formdata = new FormData();
     formdata.append("image", selectedFile);
 
@@ -26,12 +25,15 @@ function ArtPosts() {
       redirect: "follow",
     };
 
-    fetch("https://api.imgur.com/3/image", requestOptions)
+    fetch(
+      `https://api.imgur.com/3/album/${process.env.ALBUM_HASH}/add`,
+      requestOptions
+    )
       .then((response) => response.json())
       .then((result) => {
         console.log(result.status);
         if (result.status === 200) {
-          // id = result.data.id;
+          id = result.data.id;
         }
       })
       .catch((error) => console.log("error", error));
@@ -39,7 +41,10 @@ function ArtPosts() {
   useEffect(() => {
     const grabImg = () => {
       var myHeaders = new Headers();
-      // myHeaders.append("Authorization");
+      myHeaders.append(
+        "Authorization",
+        `${process.env.REACT_APP_BEARER_TOKEN}`
+      );
 
       var requestOptions = {
         method: "GET",
@@ -47,7 +52,10 @@ function ArtPosts() {
         redirect: "follow",
       };
 
-      fetch("	https://api.imgur.com/3", requestOptions)
+      fetch(
+        `https://api.imgur.com/3/album/${process.env.IMAGES_ACCOUNT_NAME}/images`,
+        requestOptions
+      )
         .then((response) => response.json())
         .then((result) => {
           setImages(result.data);
