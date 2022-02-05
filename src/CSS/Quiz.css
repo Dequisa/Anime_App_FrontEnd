@@ -1,0 +1,45 @@
+.QuizDetail {
+  border: solid black 1px;
+  background-color: cornflowerblue;
+  width: 1070px;
+  max-height: 100vh;
+  /* height: 100%; */
+  margin-left: 100px;
+  text-align: center;
+  /* margin-top: 3%; */
+}
+.QuizDetail h2 {
+  margin-top: 7%;
+}
+
+.quote {
+  padding-top: 10%;
+  padding-bottom: 2%;
+}
+/* .QuizDetail button{
+    display: inline-block;
+
+} */
+
+.popular {
+  display: flex;
+  height: 100%;
+}
+.favList {
+  border: black solid 1px;
+  margin-top: 5vh;
+  width: 20vw;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.favList img {
+  max-height: 10vh;
+}
+.quoteSection {
+  border: solid red 1px;
+  margin-top: 5vh;
+}
+
+.quiz {
+  height: 100%;
+}

@@ -1,0 +1,21 @@
+.art {
+  border: 1px black solid;
+  margin-left: 65px;
+  padding-top: 25px;
+  height: 100%;
+}
+
+.artDetails {
+  border: solid black 1px;
+  background-color: cornflowerblue;
+  width: 82vw;
+  height: 100%;
+  margin-left: 5vw;
+  margin-top: 2vh;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.artUpload {
+  padding-top: 3%;
+}

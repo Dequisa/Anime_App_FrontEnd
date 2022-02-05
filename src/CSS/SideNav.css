@@ -1,0 +1,32 @@
+.global-navigation {
+  color: purple;
+  background-color: rgb(235, 200, 26);
+  position: fixed;
+  top: 0px;
+  width: 66px;
+  height: 100vh;
+  z-index: 500;
+}
+
+.global-navigation button {
+  background-color: white;
+  display: inline-block;
+  border-radius: 50% 20% / 10% 40%;
+}
+
+.global-navigation img {
+  width: 67px;
+  height: 47px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 66px;
+  height: 100vh;
+  z-index: 500;
+}

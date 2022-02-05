@@ -1,0 +1,11 @@
+.newFormPage {
+  height: 100%;
+}
+.newFormPage h2 {
+  text-align: center;
+  border: black 1px solid;
+  color: crimson;
+  size: 16px;
+  background-color: black;
+  margin-top: 0%;
+}

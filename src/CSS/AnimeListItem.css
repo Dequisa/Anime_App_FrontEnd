@@ -1,0 +1,66 @@
+.listItems {
+  background-color: cornflowerblue;
+  width: 80%;
+  margin-left: 10%;
+}
+.listItems h2 {
+  text-align: center;
+}
+
+.listItems img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+
+.listItems button {
+  background-color: cornflowerblue;
+  width: 90%;
+}
+
+.List div {
+  padding: 10px;
+}
+
+.approvalList {
+  display: flex;
+  /* border: black solid 1px; */
+  padding: none;
+}
+
+.approvalCheck {
+  text-align: right;
+}
+
+.animeImg {
+  margin: 0%;
+  text-align: center;
+  /* border: solid black 1px; */
+  min-width: 70%;
+}
+
+.animeImg img {
+  min-width: 60%;
+  max-width: 80%;
+}
+
+.list {
+  display: flex;
+  gap: none;
+}
+.listImg {
+  background-color: red;
+  min-width: 60%;
+  max-width: 70%;
+  position: sticky;
+}
+.listDetails {
+  background-color: teal;
+  max-width: 40%;
+  float: left;
+}
+
+.listImg div {
+  text-align: center;
+}

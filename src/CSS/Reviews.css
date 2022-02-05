@@ -1,0 +1,10 @@
+.reviewSection {
+  border: black solid 1px;
+  width: 50vw;
+  background-color: yellow;
+}
+
+.reviews h2 {
+  font-family: fantasy;
+  background-color: green;
+}

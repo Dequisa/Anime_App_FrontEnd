@@ -1,0 +1,62 @@
+.Dashboard {
+  width: 94.5%;
+  height: 100vh;
+  border: black 1px solid;
+  background-color: rgb(215, 215, 228);
+  opacity: 84%;
+  margin-left: 10vh;
+  display: inline-grid;
+  grid-template-columns: [first] 50%[line2] 50%;
+  grid-template-rows: [row1-start] 11% [row1-end] 44.5% [third-line] 44.5%[last-line];
+}
+
+.userIntro {
+  border: black 1px solid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.userIntro h2 {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.imgfit {
+  object-fit: contain;
+}
+
+.userInfo {
+  border: black 1px solid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.userTask {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  border: black 1px solid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.userStats {
+  border: black 1px solid;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}

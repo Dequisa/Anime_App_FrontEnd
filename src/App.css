@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  /* border: 1px black solid; */
+  /* background-image: url('https://vignette.wikia.nocookie.net/hunterxhunter/images/5/50/Wiki-background/revision/latest?cb=20200404032730'); */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb6YpURHK_6D4DH6dg4RY9nNLPH1QkR0nwWA&usqp=CAU");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  width: auto;
+  height: auto;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}

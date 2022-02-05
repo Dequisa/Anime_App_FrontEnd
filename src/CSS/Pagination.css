@@ -1,0 +1,13 @@
+.page-link {
+  margin-left: 20%;
+  display: inline;
+}
+.page-item {
+  display: inline;
+}
+
+.Pagination ul {
+  background-color: aliceblue;
+  border: solid black 2px;
+  text-align: center;
+}
