@@ -13,6 +13,7 @@ function ArtPosts() {
   };
 
   const onUploadClick = async (e) => {
+    let id = "";
     var myHeaders = new Headers();
     myHeaders.append("Authorization");
     var formdata = new FormData();
