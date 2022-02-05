@@ -25,10 +25,7 @@ function ArtPosts() {
       redirect: "follow",
     };
 
-    fetch(
-      `https://api.imgur.com/3/album/${process.env.ALBUM_HASH}/add`,
-      requestOptions
-    )
+    fetch("https://api.imgur.com/3/image", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         console.log(result.status);
@@ -53,12 +50,13 @@ function ArtPosts() {
       };
 
       fetch(
-        `https://api.imgur.com/3/album/${process.env.IMAGES_ACCOUNT_NAME}/images`,
+        `https://api.imgur.com/3/account/${process.env.IMAGES_ACCOUNT_NAME}/images/0`,
         requestOptions
       )
         .then((response) => response.json())
         .then((result) => {
           setImages(result.data);
+          console.log(result.data);
         })
         .catch((error) => console.log("error", error));
     };
