@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 // import axios from "axios";
 import "../CSS/Art.css";
 import FormData from "form-data";
+require("dotenv").config();
+const BEARER_TOKEN = process.env.REACT_APP_BEARER_TOKEN;
+const ACCOUNT_NAME = process.env.IMAGES_ACCOUNT_NAME;
 
 function ArtPosts() {
   const [selectedFile, setSelectedFile] = useState([]);
@@ -14,7 +17,7 @@ function ArtPosts() {
   const onUploadClick = async (e) => {
     let id = "";
     var myHeaders = new Headers();
-    myHeaders.append("Authorization", `${process.env.REACT_APP_BEARER_TOKEN}`);
+    myHeaders.append("Authorization", `${BEARER_TOKEN}`);
     var formdata = new FormData();
     formdata.append("image", selectedFile);
 
@@ -38,10 +41,7 @@ function ArtPosts() {
   useEffect(() => {
     const grabImg = () => {
       var myHeaders = new Headers();
-      myHeaders.append(
-        "Authorization",
-        `${process.env.REACT_APP_BEARER_TOKEN}`
-      );
+      myHeaders.append("Authorization", `${BEARER_TOKEN}`);
 
       var requestOptions = {
         method: "GET",
@@ -50,7 +50,7 @@ function ArtPosts() {
       };
 
       fetch(
-        `https://api.imgur.com/3/account/${process.env.IMAGES_ACCOUNT_NAME}/images/0`,
+        `https://api.imgur.com/3/account/${ACCOUNT_NAME}/images/0`,
         requestOptions
       )
         .then((response) => response.json())
