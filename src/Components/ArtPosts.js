@@ -13,7 +13,7 @@ function ArtPosts() {
   };
 
   const onUploadClick = async (e) => {
-    let id = "";
+    // let id = "";
     var myHeaders = new Headers();
     myHeaders.append("Authorization");
     var formdata = new FormData();
@@ -31,7 +31,7 @@ function ArtPosts() {
       .then((result) => {
         console.log(result.status);
         if (result.status === 200) {
-          id = result.data.id;
+          // id = result.data.id;
         }
       })
       .catch((error) => console.log("error", error));
