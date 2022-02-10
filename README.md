@@ -1,6 +1,6 @@
 MVP Front-End React App for the Full-Stack Anime App. Deployed to Netlify
 
-##Populates a list of Animes
+<font size="18">Populates a list of Animes</font>
 ![](animelist.gif)
 ##Allows users to login and access personalized dashboard
 ![](animelogin.gif)
