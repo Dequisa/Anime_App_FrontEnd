@@ -1,6 +1,6 @@
 MVP Front-End React App for the Full-Stack Anime App. Deployed to Netlify
 
-.markdown-preview.markdown-preview {
+<!-- .markdown-preview.markdown-preview {
  &, h4, h5, h6 {
    font-size: font-size;
   }
@@ -9,7 +9,7 @@ MVP Front-End React App for the Full-Stack Anime App. Deployed to Netlify
   h2 { font-size: font-size; }
   h3 { font-size: font-size; }
 }
-
+ -->
 
 
 <h2>Populates a list of Animes</font></h2>
