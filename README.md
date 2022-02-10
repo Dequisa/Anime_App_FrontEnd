@@ -18,7 +18,7 @@ MVP Front-End React App for the Full-Stack Anime App. Deployed to Netlify
 ![](animelist.gif)
 
 
-<h2>Allows users to login and access personalized dashboard</h2>
+<h2>Login and access personalized dashboard</h2>
 
 
 ![](animelogin.gif)
