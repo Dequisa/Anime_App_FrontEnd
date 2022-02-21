@@ -16,8 +16,10 @@ function AnimeList({ rez }) {
     const getanimes = async () => {
       // setLoading(true);
       try {
-        const res = await axios.get("http://localhost:3001/animes");
-        // const res = await axios.get("https://anime-app-backend.herokuapp.com/");
+        // const res = await axios.get("http://localhost:3001/animes");
+        const res = await axios.get(
+          "https://anime-app-backend.herokuapp.com/animes"
+        );
         setOriginalAnimeList(res.data.payload);
         setAnimes(res.data.payload);
         // setLoading(false);
