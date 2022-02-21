@@ -1,5 +1,5 @@
 MVP Front-End React App for the Full-Stack Anime App. Deployed to Netlify
-
+<!-- 
 <!-- .markdown-preview.markdown-preview {
  &, h4, h5, h6 {
    font-size: font-size;
@@ -27,4 +27,4 @@ MVP Front-End React App for the Full-Stack Anime App. Deployed to Netlify
 <h2>Test your anime knowledge with a quote quiz</h2>
 
 
-![](AnimeQuiz.gif)
+![](AnimeQuiz.gif) -->
