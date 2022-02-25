@@ -9,7 +9,7 @@ https://agitated-kepler-e28189.netlify.app/
 **Features**:
 
  -API call and Search
- ![](animelist.gif width="250" height="250")
+ ![]("animelist.gif" width="250" height="250")
  
  
  -Third-Party API Quote Quiz
