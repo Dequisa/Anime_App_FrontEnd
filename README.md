@@ -11,7 +11,7 @@ MVP Full-Stack React App, Anime.
 ## **Features**:
 
  * API call and Search
- ![](animelist.gif width="50%")
+ ![](animelist.gif)
  
  
  * Third-Party API Quote Quiz
