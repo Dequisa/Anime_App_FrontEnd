@@ -1,2 +1,21 @@
-MVP Front-End React App for the Full-Stack Anime App. Deployed to Netlify
+Deployed Link:
+https://agitated-kepler-e28189.netlify.app/
 
+
+Overview: MVP Full-Stack React App, Anime. 
+
+
+
+Features:
+
+ -API call and Search
+ ![](animelist.gif |width=100)
+ 
+ 
+ -Third-Party API Quote Quiz
+![](AnimeQuiz.gif =250x250)
+ 
+ 
+ 
+ -User login to Personal Dashboard
+ ![](animelogin.gif)
